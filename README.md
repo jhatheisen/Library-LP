@@ -191,6 +191,14 @@ Run the application (`npm start`) and make sure the book detail page of
 
 ![display-book-details-screenshot]
 
+Run and pass the test specs to continue:
+
+```sh
+npm test 4-display-book-details
+```
+
+**CHALLENGE BONUS**:
+
 When the "Check Out" button is clicked on the page, the book's data in the
 Redux store should have the `checkedOut` value set to `true`. The "Check Out"
 button should change text to become a "Return" button.
@@ -202,12 +210,6 @@ Make sure the book detail page of "Book #1" at the route `/books/1` looks like
 this after pressing the "Check Out" button:
 
 ![display-book-details-check-out-screenshot]
-
-Run and pass the test specs to continue:
-
-```sh
-npm test 4-display-book-details
-```
 
 ## Phase 5: Create a Book
 
