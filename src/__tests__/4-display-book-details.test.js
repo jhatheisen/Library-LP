@@ -47,4 +47,24 @@ describe('04 - Display a Book\'s Details', () => {
       expect(container.innerHTML).toBe("<h1>aA Lending Library</h1><section>ID: 4<br>Title: Harry Potter and the Philosopher's Stone<br>Author: J.K. Rowling<br><button>Check Out</button><br><a href=\"/\">Back to Books List</a></section>");
     });
   });
+
+  // Start of CHALLENGE BONUS test specs
+
+  // describe('check out the book when "Check Out" button is clicked on the BookShow', () => {
+  //   it('should change the "Check Out" button to become a "Return" button when clicked', async () => {
+  //     act(() => {
+  //       require("../index.js")
+  //     });
+  //     const link = screen.getByRole('link', { name: "Book #1"});
+  //     userEvent.click(link);
+  //     await waitForElementToBeRemoved(link);
+  //     expect(container.innerHTML).toBe("<h1>aA Lending Library</h1><section>ID: 1<br>Title: The Count of Monte Cristo<br>Author: Alexandre Dumas<br><button>Check Out</button><br><a href=\"/\">Back to Books List</a></section>");
+  //     const checkOutButton = screen.getByRole('button', { name: "Check Out" });
+  //     userEvent.click(checkOutButton);
+  //     await screen.findByText('Return');
+  //     expect(container.innerHTML).toBe("<h1>aA Lending Library</h1><section>ID: 1<br>Title: The Count of Monte Cristo<br>Author: Alexandre Dumas<br><button>Return</button><br><a href=\"/\">Back to Books List</a></section>");
+  //   });
+  // });
+
+  // End of CHALLENGE BONUS test specs
 });

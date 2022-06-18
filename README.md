@@ -1,6 +1,6 @@
-# React-Redux Project Assessment
+# React-Redux Project Practice Assessment
 
-**You will have 1.5 hours for this assessment.**
+**You will have 2.5 hours for this assessment.**
 
 Read the ENTIRE instructions before running specs for the first time; it
 contains important information about running tests with Jest.
@@ -197,20 +197,6 @@ Run and pass the test specs to continue:
 npm test 4-display-book-details
 ```
 
-**CHALLENGE BONUS**:
-
-When the "Check Out" button is clicked on the page, the book's data in the
-Redux store should have the `checkedOut` value set to `true`. The "Check Out"
-button should change text to become a "Return" button.
-When the "Return" button is clicked, the book's data in the Redux store should
-have the `checkedOut` value set to `false`. The "Return" button should change
-text to become a "Check Out" button.
-
-Make sure the book detail page of "Book #1" at the route `/books/1` looks like
-this after pressing the "Check Out" button:
-
-![display-book-details-check-out-screenshot]
-
 ## Phase 5: Create a Book
 
 **IMPORTANT NOTE**: This phase relies on Phase 1, 2, and 4 test specs to
@@ -291,6 +277,30 @@ Run and pass the test specs to continue:
 
 ```sh
 npm test 7-reset-books
+```
+
+## CHALLENGE BONUS
+
+Take a look at the book detail page again at `/books/:bookId`.
+
+When the "Check Out" button is clicked on the page, the book's data in the
+Redux store should have the `checkedOut` value set to `true`. The "Check Out"
+button should then change text to become a "Return" button.
+When the "Return" button is clicked, the book's data in the Redux store should
+have the `checkedOut` value set to `false`. The "Return" button should then
+change text to become a "Check Out" button.
+
+Make sure the book detail page of "Book #1" at the route `/books/1` looks like
+this after pressing the "Check Out" button:
+
+![display-book-details-check-out-screenshot]
+
+To run the test specs with the challenge bonus, comment in the commented out
+code in the `src/__tests__/4-display-book-details.test.js` file (at the bottom
+of the file), then run the command:
+
+```sh
+npm test 4-display-book-details
 ```
 
 ## Debugging tips
